@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ё, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>МастерОК</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html"class="header__logo">
+                    МастерОК
+                </a>
+                <nav class="header__nav nav" id="nav">
+                    <a href="#" class="nav__item nav__item-01 js-button-entrance">Вход</a>
+                    <a href="#" class="nav__item nav__item-02 js-button-register">Регистрация</a>
+                    <a href="cabinet.html" class="nav__item nav__item-03">Личный кабинет</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item" id="burger__item">Menu</span>
+                </button>
+            </div>
+            
+        </div>
+    </header>
+
+    
+
+    <div class="overlay js-overlay-entrance">
+		<div class="popup js-popup-entrance">
+			<h2>Регистрация</h2>
+			<div class="authorised">
+                <form action="#" class="authorised__form">
+
+                    <div class="authorised__form-title">Логин</div>
+                    <input type="text" class="authorised__form-text authorised__form-input" required>
+
+                    <div class="authorised__form-title">Пароль</div>
+                    <input type="password" class="authorised__form-password authorised__form-input" required>
+
+                    <button type="submit" class="authorised__form-btn">Войти</button>
+
+                    <div class="authorised__form-login">
+                        <a href="#" class="js-button-register">
+                            <span>У вас нет аккаунта? Зарегистрируйтесь</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+			<div class="close-popup js-close-entrance"></div>
+		</div>
+	</div>
+	<div class="overlay js-overlay-register">
+		<div class="popup js-popup-register">
+			<h2>Регистрация</h2>
+			<div class="authorised">
+                <form action="#" class="authorised__form">
+                    <div class="authorised__form-title">ФИО</div>
+                    <input type="text" class="authorised__form-text authorised__form-input" required>
+
+                    <div class="authorised__form-title">Логин</div>
+                    <input type="text" class="authorised__form-text authorised__form-input" required>
+
+                    <div class="authorised__form-title">E-mail</div>
+                    <input type="email" class="authorised__form-email authorised__form-input" required>
+
+                    <div class="authorised__form-title">Пароль</div>
+                    <input type="password" class="authorised__form-password authorised__form-input" required>
+
+                    <input class="authorised__form-checkbox" type="checkbox" checked required>
+					<label for="language" class="authorised__form-label">
+						Я соглашаюсь на обработку моих персональных данных.
+					</label>
+
+                    <button type="submit" class="authorised__form-btn">Зарегистрироваться</button>
+
+                    <div class="authorised__form-login">
+                        <a href="#" class="js-button-entrance">
+                            <span>Есть аккаунт? Войдите!</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+			<div class="close-popup js-close-register"></div>
+		</div>
+	</div>
+    
+    <main class="main">
+        <div class="main-container">
+            <div class="sidebar">
+                <div class="sidebar__inner">
+                    <div class="greeting__info">
+                        <h3 class="greeting__title">
+                            Здравствствуйте,
+                        </h3>
+                        <h4 class="greeting__name">
+                            Dima Chameev
+                        </h4>
+                    </div>
+                    <div class="greeting__menu">
+                        <a href="cabinet.html" class="greeting__menu-item"><span></span>Моя информация</a>
+                        <a href="request-01.html" class="greeting__menu-item greeting__menu-active"><span></span>Мои заявки</a>
+                        <a href="request-02.html"class="greeting__menu-item"><span></span>Оставить заявку</a>
+                        <a href="index.html"class="greeting__menu-item">Выйти</a>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="main-info">
+                <div class="main-info__row main-info__row-1">
+                    <div class="main-info__title">Мои заявки</div>
+                    <div class="main-info__subtitle">Здесь показаны заявки, которые Вы осавляли.</div>
+                </div>
+                <div class="main-info__row request">
+                    <div class="request">
+                        <div class="request__item">
+                            <div class="request__item-row">
+                                <div class="request__item-info">
+                                    <div class="request__item-num">
+                                        Заявка №343463
+                                    </div>
+                                    <div class="request__item-date">
+                                        11.04.2021
+                                    </div>
+                                </div>
+                                <div class="request__item-status">
+                                    Новая
+                                </div>
+                            </div>
+                            <div class="request__item-row">
+                                <div class="request__item-img">
+                                    <img src="img/repairs/01.jpg" alt="">
+                                </div>
+                                <div class="request__item-text">
+                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                                </div>
+                            </div>
+                            <div class="request__item-row">
+                                <div class="request__item-category">
+                                    Ремонт квартиры под ключ
+                                </div>
+                                <div class="request__item-btn">
+                                    Изменить заявку
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </main>
+	
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__social">
+                <a href="#" class="footer__item">
+                    <img src="img/footer/01.svg">
+                </a>
+                <a href="#" class="footer__item">
+                    <img src="img/footer/02.svg">
+                </a>
+                <a href="#" class="footer__item">
+                    <img src="img/footer/03.svg">
+                </a>
+                <a href="#" class="footer__item">
+                    <img src="img/footer/04.svg">
+                </a>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-item">+ 7 800 555-35-35</div>
+                <div class="footer__contacts-item">8:00–19:00 Пн — Пт </div>
+                <div class="footer__contacts-item">masterOK@mail.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
